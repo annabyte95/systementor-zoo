@@ -64,17 +64,17 @@ button {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 16px;
-
-  /* outline: 1px solid red; */
 }
 
 @media (min-width: 768px) {
   .container {
     padding: 0 24px;
+
+    outline: 1px solid red;
   }
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1024px) {
   .container {
     padding: 0 32px;
   }
@@ -151,7 +151,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   .header-list {
     gap: 40px;
   }
@@ -232,6 +232,7 @@ button {
   background-color: #f1c232;
   color: #0d2423;
 }
+
 @media only screen and (min-width: 768px) {
   .hero {
     min-height: 500px;
@@ -266,7 +267,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 1024px) {
   .hero {
     min-height: 500px;
     background-image:
@@ -304,7 +305,180 @@ button {
 }
 /* #endregion */
 
-.hero-info {
-  min-height: 250px;
+/* #region Features */
+
+.features {
   background-color: #f6b26b;
+  padding: 50px 0;
 }
+
+.features-card-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.features-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+
+  max-width: 200px;
+}
+
+.features-svg {
+  fill: #252525;
+}
+
+.features-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.features-text {
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.1;
+}
+
+@media only screen and (min-width: 768px) {
+  .features {
+    padding: 60px 0;
+  }
+
+  .features-card-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .features-card {
+    gap: 8px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .features {
+    padding: 70px 0;
+  }
+
+  .features-card-wrap {
+    gap: 60px;
+  }
+  .features-card {
+    gap: 10px;
+
+    max-width: 230px;
+  }
+
+  .features-svg {
+    width: 70px;
+    height: 70px;
+  }
+
+  .features-title {
+    font-size: 28px;
+  }
+
+  .features-text {
+    font-size: 20px;
+  }
+}
+/* #endregion */
+
+/* #region Activities */
+.activities {
+  padding: 50px 0;
+}
+
+.activities-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.1;
+
+  margin-bottom: 20px;
+}
+.activities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.activities-subtitle {
+  font-weight: 600;
+  font-size: 22px;
+  color: #588843;
+
+  margin-bottom: 12px;
+}
+.activities-text {
+  font-size: 18px;
+
+  border-left: 3px solid #f6b26b;
+  padding-left: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .activities {
+    padding: 60px 0;
+  }
+
+  .activities-title {
+    font-size: 28px;
+
+    margin-bottom: 25px;
+  }
+
+  .activities-list {
+    gap: 20px;
+  }
+  .activities-subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    color: #588843;
+
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .activities {
+    padding: 70px 0;
+  }
+
+  .activities-title {
+    font-size: 32px;
+
+    margin-bottom: 30px;
+  }
+
+  .activities-subtitle {
+    font-size: 28px;
+  }
+
+  .activities-text {
+    font-size: 22px;
+
+    padding-left: 15px;
+  }
+}
+/* #endregion */
