@@ -406,31 +406,31 @@ button {
 }
 /* #endregion */
 
-/* #region Activities */
-.activities {
+/* #region Todo */
+.todo {
   padding: 50px 0;
 }
 
-.activities-title {
+.todo-title {
   font-weight: 600;
   font-size: 24px;
   line-height: 1.1;
 
   margin-bottom: 20px;
 }
-.activities-list {
+.todo-list {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-.activities-subtitle {
+.todo-subtitle {
   font-weight: 600;
   font-size: 22px;
   color: #588843;
 
   margin-bottom: 12px;
 }
-.activities-text {
+.todo-text {
   font-size: 18px;
 
   border-left: 3px solid #f6b26b;
@@ -438,20 +438,20 @@ button {
 }
 
 @media only screen and (min-width: 768px) {
-  .activities {
+  .todo {
     padding: 60px 0;
   }
 
-  .activities-title {
+  .todo-title {
     font-size: 28px;
 
     margin-bottom: 25px;
   }
 
-  .activities-list {
+  .todo-list {
     gap: 20px;
   }
-  .activities-subtitle {
+  .todo-subtitle {
     font-weight: 600;
     font-size: 24px;
     color: #588843;
@@ -461,21 +461,21 @@ button {
 }
 
 @media only screen and (min-width: 1024px) {
-  .activities {
+  .todo {
     padding: 70px 0;
   }
 
-  .activities-title {
+  .todo-title {
     font-size: 32px;
 
     margin-bottom: 30px;
   }
 
-  .activities-subtitle {
+  .todo-subtitle {
     font-size: 28px;
   }
 
-  .activities-text {
+  .todo-text {
     font-size: 22px;
 
     padding-left: 15px;
