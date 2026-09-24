@@ -223,7 +223,7 @@ button {
   padding: 8px 16px;
 
   transition:
-    background 300ms ease-in-out,
+    background-color 300ms ease-in-out,
     color 300ms ease-in-out;
 }
 
@@ -423,6 +423,17 @@ button {
   flex-direction: column;
   gap: 12px;
 }
+
+.todo-subtitle-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.todo-svg {
+  fill: #588843;
+}
+
 .todo-subtitle {
   font-weight: 600;
   font-size: 22px;
@@ -452,9 +463,7 @@ button {
     gap: 20px;
   }
   .todo-subtitle {
-    font-weight: 600;
     font-size: 24px;
-    color: #588843;
 
     margin-bottom: 20px;
   }
@@ -585,6 +594,116 @@ button {
 
   .animals-card-subtitle {
     font-size: 28px;
+  }
+}
+/* #endregion */
+
+/* #region Newsletter */
+.newsletter {
+  padding: 50px 0;
+
+  background-color: #588843;
+}
+
+.newsletter-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.1;
+
+  text-align: center;
+
+  margin-bottom: 15px;
+}
+.newsletter-text {
+  font-size: 18px;
+  text-align: center;
+
+  max-width: 500px;
+  margin: 0 auto 15px;
+}
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  max-width: 500px;
+  margin: 0 auto 15px;
+}
+
+.form-input {
+  font-size: 16px;
+  border: 1px solid #0d2423;
+  border-radius: 8px;
+
+  padding: 10px;
+}
+
+.form-button {
+  font-size: 16px;
+  background-color: #a24444;
+  color: #fff9ef;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 150px;
+
+  display: block;
+  margin: 0 auto;
+
+  transition:
+    background-color 300ms ease-in-out,
+    color 300ms ease-in-out;
+}
+
+.form-button:hover,
+.form-button:focus {
+  background-color: #f1c232;
+  color: #0d2423;
+}
+
+@media only screen and (min-width: 768px) {
+  .newsletter {
+    padding: 60px 0;
+  }
+
+  .newsletter-title {
+    font-size: 26px;
+  }
+
+  .newsletter-text {
+    font-size: 20px;
+  }
+
+  .form-input {
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  .form-button {
+    font-size: 18px;
+    padding: 12px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .newsletter {
+    padding: 70px 0;
+  }
+
+  .newsletter-title {
+    font-size: 30px;
+  }
+
+  .newsletter-text {
+    font-size: 22px;
+  }
+  .form-input {
+    font-size: 20px;
+    padding: 14px;
+  }
+  .form-button {
+    font-size: 20px;
+    padding: 14px;
   }
 }
 /* #endregion */

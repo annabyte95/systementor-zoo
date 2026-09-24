@@ -38,6 +38,9 @@
               <a class="header-nav-link" href="#todo">Att göra</a>
             </li>
             <li class="header-item">
+              <a class="header-nav-link" href="#newsletter">Nyhetsbrev</a>
+            </li>
+            <li class="header-item">
               <a class="header-nav-link" href="#visit">Hitta hit</a>
             </li>
           </ul>
@@ -63,7 +66,7 @@
             </svg>
             <p class="hero-text">Öppet varje dag 10:00 - 17:00</p>
           </div>
-          <a class="hero-link" href="#visit">Boka biljett</a>
+          <a class="hero-link" href="#newsletter">Prenumerera</a>
         </div>
       </section>
 
@@ -105,7 +108,14 @@
           <h2 class="todo-title">Att göra</h2>
           <ul class="todo-list">
             <li>
-              <h3 class="todo-subtitle">Höstkul för barnen</h3>
+              <div class="todo-subtitle-wrapper">
+                <h3 class="todo-subtitle">
+                  <svg class="todo-svg" width="28" height="28">
+                    <use href="icons.svg#icon-leaf"></use>
+                  </svg>
+                  Höstkul för barnen
+                </h3>
+              </div>
               <p class="todo-text">
                 Lek bland höstlöven och upptäck vår stora lekplats. Här finns
                 plats för både lek och äventyr för barn i olika åldrar. Under
@@ -114,7 +124,14 @@
             </li>
 
             <li>
-              <h3 class="todo-subtitle">Restauranger & fika</h3>
+              <div class="todo-subtitle-wrapper">
+                <h3 class="todo-subtitle">
+                  <svg class="todo-svg" width="28" height="28">
+                    <use href="icons.svg#icon-mug"></use>
+                  </svg>
+                  Restauranger & fika
+                </h3>
+              </div>
               <p class="todo-text">
                 Ta en paus från alla äventyr och njut av god mat och fika. I
                 parken finns flera mysiga platser där du kan äta lunch, ta en
@@ -123,7 +140,14 @@
             </li>
 
             <li>
-              <h3 class="todo-subtitle">Alla våra fantastiska djur</h3>
+              <div class="todo-subtitle-wrapper">
+                <h3 class="todo-subtitle">
+                  <svg class="todo-svg" width="28" height="28">
+                    <use href="icons.svg#icon-paw"></use>
+                  </svg>
+                  Alla våra fantastiska djur
+                </h3>
+              </div>
               <p class="todo-text">
                 Upptäck våra fantastiska djur och lär dig mer om deras liv.
                 Under ditt besök kan du möta giraffer och många andra spännande
@@ -224,6 +248,61 @@
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="newsletter" id="newsletter">
+        <div class="container">
+          <h2 class="newsletter-title">Nyhetsbrev</h2>
+
+          <p class="newsletter-text">
+            Prenumerera på vårt nyhetsbrev och få de senaste nyheterna från
+            Systementor Zoo.
+          </p>
+          <form action="https://postman-echo.com/post" method="post">
+            <div class="form-wrapper">
+              <label for="first-name" class="visually-hidden">Förnamn</label>
+              <input
+                class="form-input"
+                type="text"
+                name="first-name"
+                id="first-name"
+                placeholder="Förnamn"
+                required
+              />
+
+              <label for="last-name" class="visually-hidden">Efternamn</label>
+              <input
+                class="form-input"
+                type="text"
+                name="last-name"
+                id="last-name"
+                placeholder="Efternamn"
+                required
+              />
+
+              <label for="email" class="visually-hidden">E-post</label>
+              <input
+                class="form-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Ange din e-post"
+                required
+              />
+
+              <label for="age" class="visually-hidden">Ålder</label>
+              <input
+                class="form-input"
+                type="number"
+                id="age"
+                name="age"
+                placeholder="Välj din ålder"
+                required
+              />
+            </div>
+            <button class="form-button" type="submit">Prenumerera</button>
+          </form>
         </div>
       </section>
     </main>
