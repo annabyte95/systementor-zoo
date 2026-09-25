@@ -71,35 +71,37 @@
       </section>
 
       <section class="features">
-        <div class="container features-card-wrap">
+        <div class="container">
           <h2 class="visually-hidden">Service och bekvämligheter</h2>
-          <div class="features-card">
-            <svg class="features-svg" width="62" height="62">
-              <use href="icons.svg#icon-wifi"></use>
-            </svg>
-            <h3 class="features-title">Gratis WiFi</h3>
-            <p class="features-text">Gratis WiFi finns i hela parken.</p>
-          </div>
+          <ul class="features-card-wrap">
+            <li class="features-card">
+              <svg class="features-svg" width="62" height="62">
+                <use href="icons.svg#icon-wifi"></use>
+              </svg>
+              <h3 class="features-title">Gratis WiFi</h3>
+              <p class="features-text">Gratis WiFi finns i hela parken.</p>
+            </li>
 
-          <div class="features-card">
-            <svg class="features-svg" width="62" height="62">
-              <use href="icons.svg#eat-icon"></use>
-            </svg>
-            <h3 class="features-title">Mat & fika</h3>
-            <p class="features-text">
-              Ta en paus och njut av god mat och fika.
-            </p>
-          </div>
+            <li class="features-card">
+              <svg class="features-svg" width="62" height="62">
+                <use href="icons.svg#eat-icon"></use>
+              </svg>
+              <h3 class="features-title">Mat & fika</h3>
+              <p class="features-text">
+                Ta en paus och njut av god mat och fika.
+              </p>
+            </li>
 
-          <div class="features-card">
-            <svg class="features-svg" width="62" height="62">
-              <use href="icons.svg#icon-tent"></use>
-            </svg>
-            <h3 class="features-title">Camping</h3>
-            <p class="features-text">
-              Övernatta på vår mysiga camping nära parken.
-            </p>
-          </div>
+            <li class="features-card">
+              <svg class="features-svg" width="62" height="62">
+                <use href="icons.svg#icon-tent"></use>
+              </svg>
+              <h3 class="features-title">Camping</h3>
+              <p class="features-text">
+                Övernatta på vår mysiga camping nära parken.
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -109,12 +111,10 @@
           <ul class="todo-list">
             <li>
               <div class="todo-subtitle-wrapper">
-                <h3 class="todo-subtitle">
-                  <svg class="todo-svg" width="28" height="28">
-                    <use href="icons.svg#icon-leaf"></use>
-                  </svg>
-                  Höstkul för barnen
-                </h3>
+                <svg class="todo-svg" width="28" height="28">
+                  <use href="icons.svg#icon-leaf"></use>
+                </svg>
+                <h3 class="todo-subtitle">Höstkul för barnen</h3>
               </div>
               <p class="todo-text">
                 Lek bland höstlöven och upptäck vår stora lekplats. Här finns
@@ -125,12 +125,10 @@
 
             <li>
               <div class="todo-subtitle-wrapper">
-                <h3 class="todo-subtitle">
-                  <svg class="todo-svg" width="28" height="28">
-                    <use href="icons.svg#icon-mug"></use>
-                  </svg>
-                  Restauranger & fika
-                </h3>
+                <svg class="todo-svg" width="28" height="28">
+                  <use href="icons.svg#icon-mug"></use>
+                </svg>
+                <h3 class="todo-subtitle">Restauranger & fika</h3>
               </div>
               <p class="todo-text">
                 Ta en paus från alla äventyr och njut av god mat och fika. I
@@ -141,12 +139,10 @@
 
             <li>
               <div class="todo-subtitle-wrapper">
-                <h3 class="todo-subtitle">
-                  <svg class="todo-svg" width="28" height="28">
-                    <use href="icons.svg#icon-paw"></use>
-                  </svg>
-                  Alla våra fantastiska djur
-                </h3>
+                <svg class="todo-svg" width="28" height="28">
+                  <use href="icons.svg#icon-paw"></use>
+                </svg>
+                <h3 class="todo-subtitle">Alla våra fantastiska djur</h3>
               </div>
               <p class="todo-text">
                 Upptäck våra fantastiska djur och lär dig mer om deras liv.
@@ -161,8 +157,8 @@
       <section class="animals" id="animals">
         <div class="container">
           <h2 class="animals-title">Möt några av våra djur</h2>
-          <div class="animals-wrapper">
-            <div class="animals-card">
+          <ul class="animals-wrapper">
+            <li class="animals-card">
               <picture>
                 <source
                   srcset="
@@ -182,8 +178,9 @@
                 Giraffen är världens högsta djur och kan bli upp till 5 meter
                 lång.
               </p>
-            </div>
-            <div class="animals-card">
+            </li>
+
+            <li class="animals-card">
               <picture>
                 <source
                   srcset="
@@ -202,9 +199,9 @@
               <p class="animals-card-text">
                 Lejonet kallas ofta djurens kung och lever i flockar.
               </p>
-            </div>
+            </li>
 
-            <div class="animals-card">
+            <li class="animals-card">
               <picture>
                 <source
                   srcset="
@@ -224,9 +221,9 @@
                 Papegojan är känd för sina starka färger och sin förmåga att
                 härma ljud.
               </p>
-            </div>
+            </li>
 
-            <div class="animals-card">
+            <li class="animals-card">
               <picture>
                 <source
                   srcset="
@@ -246,8 +243,8 @@
                 Älgen är Nordens största landdjur och trivs i skogar och nära
                 vatten.
               </p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -305,7 +302,169 @@
           </form>
         </div>
       </section>
+
+      <section class="visit" id="visit">
+        <div class="container">
+          <h2 class="visit-title">Besök oss</h2>
+
+          <div class="visit-wrapper">
+            <div class="visit-left">
+              <h3 class="visit-subtitle">Djurinformation</h3>
+
+              <table class="animals-table">
+                <thead class="table-head">
+                  <tr class="table-row">
+                    <th class="table-heading" scope="col">Namn</th>
+                    <th class="table-heading" scope="col">Bild</th>
+                    <th class="table-heading" scope="col">Vikt</th>
+                    <th class="table-heading" scope="col">Läs mer</th>
+                  </tr>
+                </thead>
+
+                <tbody class="table-body">
+                  <tr class="table-row">
+                    <td class="table-data">Lejon</td>
+                    <td class="table-data">
+                      <img
+                        class="table-img"
+                        src="images/visit/lion.jpg"
+                        alt="lejon"
+                        width="80"
+                      />
+                    </td>
+                    <td class="table-data">280 kg</td>
+                    <td class="table-data">
+                      <a
+                        class="table-link"
+                        href="https://sv.wikipedia.org/wiki/Lejon"
+                        >Info</a
+                      >
+                    </td>
+                  </tr>
+
+                  <tr class="table-row">
+                    <td class="table-data">Giraff</td>
+                    <td class="table-data">
+                      <img
+                        class="table-img"
+                        src="images/visit/giraff.jpg"
+                        alt="giraff"
+                        width="80"
+                      />
+                    </td>
+
+                    <td class="table-data">1 200 kg</td>
+                    <td class="table-data">
+                      <a
+                        class="table-link"
+                        href="https://sv.wikipedia.org/wiki/Giraff"
+                        >Info</a
+                      >
+                    </td>
+                  </tr>
+
+                  <tr class="table-row">
+                    <td class="table-data">Pingvin</td>
+                    <td class="table-data">
+                      <img
+                        class="table-img"
+                        src="images/visit/pingvin.jpg"
+                        alt="pingvin"
+                        width="80"
+                      />
+                    </td>
+                    <td class="table-data">28 kg</td>
+                    <td class="table-data">
+                      <a
+                        class="table-link"
+                        href="https://sv.wikipedia.org/wiki/Pingviner"
+                        >Info</a
+                      >
+                    </td>
+                  </tr>
+
+                  <tr class="table-row">
+                    <td class="table-data">Kattbjörn</td>
+                    <td class="table-data">
+                      <img
+                        class="table-img"
+                        src="images/visit/panda.jpg"
+                        alt="kattbjörn"
+                        width="80"
+                      />
+                    </td>
+
+                    <td class="table-data">5 kg</td>
+                    <td class="table-data">
+                      <a
+                        class="table-link"
+                        href="https://sv.wikipedia.org/wiki/Kattbj%C3%B6rn"
+                        >Info</a
+                      >
+                    </td>
+                  </tr>
+
+                  <tr class="table-row">
+                    <td class="table-data">Elefant</td>
+                    <td class="table-data">
+                      <img
+                        class="table-img"
+                        src="images/visit/elefant.jpg"
+                        alt="elefant"
+                        width="80"
+                      />
+                    </td>
+
+                    <td class="table-data">5 000 kg</td>
+                    <td class="table-data">
+                      <a
+                        class="table-link"
+                        href="https://sv.wikipedia.org/wiki/Elefant"
+                        >Info</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="visit-right">
+              <h3 class="visit-subtitle">Hitta hit</h3>
+
+              <p class="visit-text">
+                Du hittar oss enkelt med både bil och kollektivtrafik. Se kartan
+                nedan för vägbeskrivning.
+              </p>
+
+              <iframe
+                class="visit-map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2035.1085326866119!2d18.056875176743862!3d59.33114181087609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d6083edea77%3A0xe3cd8ba35a1f582c!2sStockholm%20City!5e0!3m2!1ssv!2sse!4v1790254955405!5m2!1ssv!2sse"
+                width="500"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container">
+        <a href="#index.html"
+          ><img src="images/logo.png" alt="Systementor Zoo" width="120"
+        /></a>
+
+        <ul>
+          <li>
+            <a href="mailto:info@systementorzoo.se"></a>info@systementorzoo.se
+          </li>
+          <li>
+            <a href="tel:08-123 45 67"></a>08-123 45 67</li>
+        </ul>
+        <p class="footer-text">&copy; 2026 Systementor Zoo</p>
+      </div>
+    </footer>
   </body>
 </html>

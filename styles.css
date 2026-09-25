@@ -69,8 +69,6 @@ button {
 @media (min-width: 768px) {
   .container {
     padding: 0 24px;
-
-    outline: 1px solid red;
   }
 }
 
@@ -427,7 +425,10 @@ button {
 .todo-subtitle-wrapper {
   display: flex;
   align-items: center;
+
   gap: 8px;
+
+  margin-bottom: 12px;
 }
 
 .todo-svg {
@@ -438,8 +439,6 @@ button {
   font-weight: 600;
   font-size: 22px;
   color: #588843;
-
-  margin-bottom: 12px;
 }
 .todo-text {
   font-size: 18px;
@@ -462,10 +461,12 @@ button {
   .todo-list {
     gap: 20px;
   }
+  .todo-subtitle-wrapper {
+    margin-bottom: 20px;
+  }
+
   .todo-subtitle {
     font-size: 24px;
-
-    margin-bottom: 20px;
   }
 }
 
@@ -562,6 +563,9 @@ button {
     flex-wrap: wrap;
     justify-content: center;
     gap: 36px;
+
+    max-width: 500px;
+    margin: 0 auto;
   }
 
   .animals-card {
@@ -590,6 +594,7 @@ button {
 
   .animals-wrapper {
     flex-wrap: nowrap;
+    max-width: none;
   }
 
   .animals-card-subtitle {
@@ -636,6 +641,15 @@ button {
   border-radius: 8px;
 
   padding: 10px;
+}
+
+.form-input:hover,
+.form-input:focus {
+  border: 1px solid #f1c232;
+}
+
+.form-input:focus {
+  outline: none;
 }
 
 .form-button {
@@ -704,6 +718,151 @@ button {
   .form-button {
     font-size: 20px;
     padding: 14px;
+  }
+}
+/* #endregion */
+
+/* #region Visit */
+.visit {
+  padding: 50px 0;
+}
+.visit-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.visit-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.1;
+
+  text-align: center;
+
+  margin-bottom: 15px;
+}
+
+.visit-left,
+.visit-right {
+  background-color: #fedab4;
+
+  padding: 20px;
+  border-radius: 10px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.visit-subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.1;
+
+  text-align: center;
+
+  margin-bottom: 15px;
+}
+
+.animals-table {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table-heading,
+.table-data {
+  font-size: 16px;
+  padding: 6px 4px;
+  text-align: center;
+  border-left: 1px solid #0d2423;
+  border-bottom: 1px solid #0d2423;
+}
+
+.table-heading:first-child,
+.table-data:first-child {
+  border-left: none;
+}
+
+.table-row:last-child .table-data {
+  border-bottom: none;
+}
+
+.table-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.table-link {
+  text-decoration: underline;
+  color: #a24444;
+
+  transition: color 300ms ease-in-out;
+}
+
+.table-link:hover,
+.table-link:focus {
+  color: #0d2423;
+}
+
+.visit-text {
+  font-size: 16px;
+  text-align: center;
+
+  margin-bottom: 15px;
+}
+.visit-map {
+  display: block;
+  width: 100%;
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (min-width: 768px) {
+  .visit {
+    padding: 60px 0;
+  }
+
+  .visit-wrapper {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .visit-left,
+  .visit-right {
+    flex: 1;
+  }
+
+  .visit-title {
+    font-size: 26px;
+  }
+
+  .visit-subtitle {
+    font-size: 22px;
+  }
+
+  .visit-map {
+    height: 400px;
+  }
+
+  .visit-text {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .visit {
+    padding: 70px 0;
+  }
+
+  .visit-title {
+    font-size: 30px;
+  }
+
+  .visit-subtitle {
+    font-size: 26px;
+  }
+
+  .visit-text {
+    font-size: 20px;
   }
 }
 /* #endregion */
