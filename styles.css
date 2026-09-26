@@ -328,7 +328,7 @@ button {
 
   white-space: nowrap;
   clip-path: inset(100%);
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
 
@@ -363,10 +363,8 @@ button {
   }
 
   .features-card-wrap {
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+
     gap: 40px;
   }
 
@@ -739,7 +737,7 @@ button {
 
   text-align: center;
 
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .visit-left,
@@ -833,6 +831,8 @@ button {
 
   .visit-title {
     font-size: 26px;
+
+    margin-bottom: 30px;
   }
 
   .visit-subtitle {
@@ -855,6 +855,8 @@ button {
 
   .visit-title {
     font-size: 30px;
+
+    margin-bottom: 35px;
   }
 
   .visit-subtitle {
@@ -863,6 +865,95 @@ button {
 
   .visit-text {
     font-size: 20px;
+  }
+}
+/* #endregion */
+
+/* #region Footer */
+.footer {
+  padding: 50px 0 20px;
+  background-color: #0d2423;
+}
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  margin-bottom: 25px;
+}
+
+.footer-logo {
+  transition: opacity 300ms ease-in-out;
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
+  opacity: 80%;
+}
+
+.footer-item {
+  text-align: center;
+}
+
+.footer-link {
+  color: #fff9ef;
+  font-size: 16px;
+
+  transition: color 300ms ease-in-out;
+}
+.footer-text {
+  color: #fff9ef;
+  font-size: 12px;
+  text-align: center;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: #f1c232;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding: 60px 0 20px;
+  }
+
+  .footer-wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0;
+
+    margin-bottom: 40px;
+  }
+
+  .footer-logo {
+    width: 160px;
+  }
+
+  .footer-link {
+    font-size: 18px;
+  }
+
+  .footer-text {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .footer {
+    padding: 70px 0 20px;
+  }
+
+  .footer-logo {
+    width: 180px;
+  }
+
+  .footer-link {
+    font-size: 20px;
+  }
+
+  .footer-text {
+    font-size: 16px;
   }
 }
 /* #endregion */
